@@ -5,7 +5,7 @@ platform :ios do
   lane :export_ipa do
     decode_file
 
-    keychain_password = SecureRandom.uuid
+    keychain_password = "random"
 
     create_keychain(
       name: 'ios-build.keychain',
